@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Britney eindopdracht</title>
+</head>
+
+<body>
+    <nav>
+        <img src="images/logo.png" alt="logo" id="logo">
+      <div class="nav-links">
+        <a href="#header">Header</a>
+        <a href="#portraits">Portraits</a>
+        <a href="#contact">Form</a>
+        <a href="#footer">Footer</a>
+        </div>
+    </nav>
+
+
+
+    <header id="header">
+        <section class="wow">
+            <h1>World of Warcraft</h1>
+            <p> In the high-fantasy universe of Azeroth, WoW allows players to create characters from various races and classes,
+                each with unique abilities and traits. The game's expansive and ever-evolving narrative has been a hallmark, weaving together intricate stories, legendary characters, and a vast history that players can explore through quests, dungeons, and raids. </p>
+            <div class="headerlinks">
+                <a href="https://www.youtube.com/watch?v=usYvefDzOqQ" target="_blank">Video</a>
+            </div>
+           
+    </header>
+
+
+    <main>
+        <section class="middleheader">
+            <h2>Fractions</h2>
+            <div id="portraits">
+                <div class="portraits-container">
+                    <article class="articleOne">
+                        <div class="portraits-content">
+                            <img src="images\scourge.jpg" alt="hert 2" />
+                            <h3>The Scourge</h3>
+                            <p class="stars">★ ★ ★ ★ ★</p>
+                            <p>"The Scourge includes various undead creatures, such as ghouls, abominations, and necromancers. Its presence is often felt in the icy continent of Northrend."
+                            </p>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=_nxkvJYi4BI" target="_blank">Koop</a>
+                    </article>
+
+                        
+                    <article class="articleTwo">
+                        <div class="portraits-content">
+                            <img src="images\horde.jpg" alt="Rendier" />
+                            <h3>The Horde</h3>
+                            <p class="stars">★ ★ ★ ★ ★</p>
+                            <p>"Horde" is commonly associated with one of the two factions in World of Warcraft. The Horde is characterized by its 
+                                diverse races, including orcs, trolls, and undead."</p>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=_nxkvJYi4BI" target="_blank">Koop</a>
+                    </article>
+
+                       
+                    <article class="articleThree">
+                        <div class="portraits-content">
+                            <img src="images\alliance.jpg" alt="Hert 1" />
+                            <h3>The Alliance</h3>
+                            <p class="stars">★ ★ ★ ☆ ☆</p>
+                            <p>"The Alliance is a coalition of various races united against common threats in the world of Azeroth.
+                                 Comprising noble and diverse races, the Alliance includes Humans, Dwarves, Gnomes, Night Elves, Draenei, and Worgen. "</p>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=_nxkvJYi4BI" target="_blank">Koop</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="form-container" id="contact">
+            <form class="form" action="submit_form.php" method="post">
+                <h4>Contact</h4>
+                <div class="name-container">
+                    <div class="name-field">
+                        <label for="firstname">First Name*</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name..." required>
+                    </div>
+                    <div class="name-field">
+                        <label for="lastname">Last Name*</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name..." required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address..." required>
+                </div>
+                
+                <div class="date-and-city-container">
+                    <div class="city-field">
+                        <label for="city">City*</label>
+                        <input type="text" id="city" name="city" placeholder="Please enter your current city..." required>
+                    </div>
+                    <div class="date-field">
+                        <label for="birthdate">Date of Birth*</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                </div>
+                
+                <div class="subject-container">
+                    <label for="portrait">What fraction would you choose?*</label>
+                    <select id="portrait" name="portrait" required>
+                        <option value="Portrait 1">The scourge</option>
+                        <option value="Portrait 2">The Horde</option>
+                        <option value="Portrait 3">The Alliance</option>
+                    </select>
+                </div>
+                <label for="question">Do you have any questions?*</label>
+                <textarea id="question" name="question" cols="30" rows="10" placeholder="Please enter your comment..." required></textarea>
+                <div class="radio-container">
+                    <label>Sign up for our Newsletter?</label>
+                    <div class="radio-buttons">
+                      
+                            <label>
+                                <input type="radio" name="option" value="yes"> Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="option" value="no"> No
+                            </label>
+                        </div>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">I accept the terms and conditions*</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            
+        </section>
+            <footer id="footer">
+        <section class="footer">
+            <img src="images\logo.png" alt="footer-img">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                Copyright © Britney Krabbendam
+            </div>
+        </div>
+    </footer>
+
+    <section class="buttonToTop">
+        <a href="#top">☝️</a>
+    </section>
+
+</body>
+
+</html>
